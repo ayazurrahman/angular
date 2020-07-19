@@ -13,12 +13,11 @@ export class TdrivenComponent implements OnInit {
   }
   posts: any;
   title = 'forms';
-  model = {
-    name: "Ayaz",
-    age:21
-  }
-  onSubmit(value:any) {
+  model = {name:"",age:10};
+  onSubmit(value: any, event:Event) {
+    event.preventDefault();
     console.log(value);
+    this.sendData(value);
   }
  
   ngOnInit(): void{
@@ -28,9 +27,9 @@ export class TdrivenComponent implements OnInit {
     });
   } 
 
-  sendData() {
-    const newModel = { "id": 3, "name": "ayazur", "age": 26 }
-    this.servicesService.sendIt(newModel).subscribe(data => {
+  sendData(value) {
+    const newModel = { id: 9, name: "ayazur", age: 26 };
+    this.servicesService.sendIt(value).subscribe(data => {
       console.log(data);
     });
   }

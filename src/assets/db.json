@@ -11,9 +11,39 @@
       "age": "23"
     },
     {
-      "id": 3,
-      "name": "ayaz",
-      "age": 21
+      "name": "Ayazur",
+      "age": 25,
+      "id": 3
+    },
+    {
+      "name": "Habib",
+      "age": 14,
+      "id": 4
+    },
+    {
+      "name": "Jamal",
+      "age": 30,
+      "id": 5
+    },
+    {
+      "name": "Jhon",
+      "age": 15,
+      "id": 6
+    },
+    {
+      "name": "berry",
+      "age": 25,
+      "id": 7
+    },
+    {
+      "name": "Yash",
+      "age": 24,
+      "id": 8
+    },
+    {
+      "name": "Habib Lolki",
+      "age": 15,
+      "id": 9
     }
   ]
 }

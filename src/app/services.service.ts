@@ -11,10 +11,13 @@ export class ServicesService {
   getPosts() {
     return this.httpClient.get("http://localhost:3000/posts");
   }
+  // private options = { headers: new HttpHeaders().set('Content-Type', 'application/json') };
   sendIt(newModel) {
-    const httpHeaders = new HttpHeaders();
-    httpHeaders.append('content-type', 'application/json');
-    console.log(newModel);
+    const httpHeaders = new HttpHeaders({
+      'content-type': 'application/json',
+      'Authorization':'abcde'
+    });
+    console.log(httpHeaders);
     return this.httpClient.post('http://localhost:3000/posts', newModel, { headers:httpHeaders });
   }
 }
